@@ -1,0 +1,118 @@
+/* Import 'Cutive Mono' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+/* Resetting default margin, padding, and setting the font family */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+/* Styling the body with flex layout and centering */
+body {
+  height: 100vh; 
+  background-color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the header section with flex layout */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for question text */
+h2 {
+  color: #001d3d;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Styling for highlighted question text (turned red) */
+.question h2.highlighted {
+  color: rgb(255, 0, 0);
+}
+
+/* Styling for the mode button */
+#mode {
+  margin: 20px;
+  padding: 10px;
+  height: 40px;
+  color: white;
+  background-color: #979e7f;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  box-shadow: 3px 4px 4px rgba(131, 133, 131, 0.459);
+}
+
+/* Styling for the main container and result container */
+.resultcontainer,
+.questioncontainer {
+  width: 600px;
+  padding: 25px;
+  background-color: #e9edc9;
+  border: 1px solid #10003d;
+  border-radius: 10px;
+  box-shadow: 5px 7px 10px rgba(22, 0, 39, 0.459);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the options container with grid layout */
+.optioncontainer {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Styling for individual options */
+.options {
+  width: 420px;
+  padding: 10px;
+  background-color: #b6be9a;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+/* Hover effect for individual options */
+.options:hover {
+  background-color: #6d7458;
+}
+
+/* Styling for highlight and replay buttons */
+.highlight,
+.replay,
+.remove-highlight {
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #979e7f;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hover effect for highlight and replay buttons */
+.replay:hover,
+.highlight:hover,
+.remove-highlight:hover {
+  background-color: #6d7458;
+}
+
+/* Container for the highlight and remove highlight buttons */
+.highlightButtons {
+  display: flex;
+  flex-direction: row;
+}
+

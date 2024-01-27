@@ -1,0 +1,54 @@
+/* Import the Lobster Two font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');/* Resetting default margin, padding, and setting the font family */
+
+/* Reset default margin, padding, and set the font-family to Lobster Two */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+/* Styling for the body */
+body {
+  height: 100vh;
+  background-color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#kalvium{
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#kalvium-image{
+  height: 50px;
+}
+
+/* Styling for the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the toggle button */
+.toggle {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #979e7f;
+  border: 1px solid #588157;
+  box-shadow: 3px 4px 4px rgba(128, 128, 128, 0.479);
+  color: white;
+}
+
+/* Styling for hover effect on the toggle button */
+.toggle:hover {
+  background-color: #588157;
+  cursor: pointer;
+}

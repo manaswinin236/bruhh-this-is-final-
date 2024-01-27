@@ -3,6 +3,7 @@ const questions = [
     text: "What is ReactJS?",
     options: [
       { id: 0, text: "Server-side framework", isCorrect: false },
+      
       { id: 1, text: "user interface framework", isCorrect: true },
       { id: 2, text: "both a and b", isCorrect: false },
       { id: 3, text: "none of the above", isCorrect: false },
